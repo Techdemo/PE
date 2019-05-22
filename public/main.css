@@ -1,0 +1,39 @@
+/*  dit moet je allemaal nog progressive enhancen met fallbacks */
+
+/* colors: */
+/* text color: #F2F2F2 */
+/* background-color: #1C304A */
+
+
+.chart{
+    display:table;
+    table-layout: fixed;   
+    width:60%;
+    max-width:700px;
+    height:200px;
+    margin:0 auto;
+    background-size: 100% 50px;
+    background-position: left top; }
+
+.chart > li {
+    position:relative;
+    display:table-cell;
+    vertical-align:bottom;
+    height:200px;
+}
+
+span {
+    margin:0 1em;
+    display: block;
+    background:  #F2F2F2;
+}
+
+span:before {
+    position:absolute;
+    left:0;right:0;top:100%;
+    padding:5px 1em 0;
+    display:block;
+    text-align:center;
+    content:attr(title);
+    word-wrap: break-word;
+}

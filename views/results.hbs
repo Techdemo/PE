@@ -1,0 +1,55 @@
+<h1>Resultaten</h1>
+ {{#if vote }}
+    <h2>Bedankt voor je stem</h2>
+  <article>
+   <h3>Je hebt {{ vote }} gestemd</h3>
+  </article>
+{{/if }}
+
+<section>
+    <h3>Dit zijn de resultaten tot nu toe</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="text-align:left">Gerecht</th> 
+    <th style="text-align:left">Aantal stemmen</th>
+  </tr>
+  <tr>
+    <td>Shoarma</td>
+    <td>{{ data.shoarma }}</td>
+  </tr>
+  <tr>
+    <td>Boerenkool</td>
+    <td>{{ data.boerenkool }}</td>
+  </tr>
+  <tr>
+    <td>Spaghetti</td>
+    <td>{{ data.spaghetti }}</td>
+  </tr>
+  <tr>
+    <td>Friet</td>
+    <td>{{ data.friet }}</td>
+  </tr>
+</table>
+
+<ul class="chart">
+  <li>
+    <span style="height:5%" title="ActionScript"></span>
+  </li>
+  <li>
+    <span style="height:70%" title="JavaScript"></span>
+  </li>
+  <li>
+    <span style="height:50%" title="CoffeScript"></span>
+  </li>
+  <li>
+    <span style="height:15%" title="HTML"></span>
+  </li>
+</ul>    
+
+</section>
+
+<noscript>
+     <p>deze pagina herlaad automatisch, mocht dat niet gebeuren doe dat hier handmatig</p>
+     <a href="">ververs resultaten</a>
+</noscript>
